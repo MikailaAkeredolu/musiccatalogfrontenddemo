@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Music Album Catalog</h1>
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>Id</th>
+    <th>name of Album</th>
+    <th>Price</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let music of musicAlbums">
+    <td>{{music.id}}</td>
+    <td>{{music.nameOfAlbum}}</td>
+    <td>{{music.price}}</td>
+    <td><button type="button" class="btn btn-primary" (click)="goToEditMusic(music.id)">Edit Album</button></td>
+  </tr>
+</tbody>
+</table>
+
+<div>
+  <button type="button" class="btn btn-success" (click)="goToAddMusicAlbum()">Add an Album</button>
+</div>
+
+</div>

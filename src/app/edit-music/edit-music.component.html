@@ -1,0 +1,20 @@
+<div class="container">
+  <form (ngSubmit)= "editMusicButton()">
+    <div class="form-group">
+      <label for="id">Id</label>
+      <input type="text" class="form-control" required [(ngModel)]="music.id" name="id" disabled>
+    </div>
+
+    <div class="form-group">
+      <label for="nameOfAlbum">nameOfAlbum</label>
+      <input type="text" class="form-control" required [(ngModel)]="music.nameOfAlbum" name="nameOfAlbum">
+    </div>
+
+    <div class="form-group">
+      <label for="price">price</label>
+      <input type="number" class="form-control" required [(ngModel)]="music.price" name="price">
+    </div>
+
+    <button type="submit" class="btn btn-warning">Submit</button>
+  </form>
+</div>

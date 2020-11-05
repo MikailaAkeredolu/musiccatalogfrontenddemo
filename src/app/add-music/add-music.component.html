@@ -1,0 +1,21 @@
+<div class="container">
+  <form (ngSubmit) = submitMusicAlbum() >
+
+    <div class="form-group">
+      <label for="id">Id</label>
+      <input type="text" class="form-control" required [(ngModel)] = "music.id" name="id">
+    </div>
+
+    <div class="form-group">
+      <label for="nameOfAlbum">Album Name</label>
+      <input type="text" class="form-control" required [(ngModel)] = "music.nameOfAlbum" name="nameOfAlbum">
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="number" class="form-control" required [(ngModel)] = "music.price" name="price">
+    </div>
+
+    <button type="submit" class="btn btn-success">submit</button>
+  </form>
+</div>
